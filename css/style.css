@@ -1,0 +1,354 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Mulish', sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+header{
+  width: 100%;
+  height: 10vh;
+  background-color: #2a2828;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav .container{
+  justify-content: space-between;
+}
+.brand{
+  font-size: 1.2rem;
+}
+.brand i {
+  color:#58a0db;
+}
+nav a {
+  color: #fff;
+}
+ul a:hover{
+  color: #58a0db;
+}
+
+.cartContainer{
+  position: relative;
+}
+
+.cartContainer .count{
+  position: absolute;
+  bottom: 5%;
+  background-color: #5a5757;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+}
+nav i {
+  font-size: 1.3rem;
+  color: #58a0db;
+}
+.menu-bar{
+  cursor: pointer;
+  display: none;
+}
+
+#cartItems{
+  position: absolute;
+  width: 300px;
+  min-height: 350px;
+  top: 110%;
+  right: 5%;
+  /*border: 2px solid #000;*/
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+#store{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.searchContainer,
+.itemsContainer,
+.searchContainer form{
+  width: 100%;
+}
+.searchContainer {
+  height: 15vh;
+}
+.searchContainer,
+.searchContainer form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.searchContainer input{
+  width: 50%;
+  font-size: 1.2rem;
+  border: 2px solid #000;
+  padding: .5rem;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.searchContainer button{
+  padding: .5rem .8rem;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: .4s;
+  font-size: 1.2rem;
+}
+.itemsContainer .container {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.itemsContainer .item{
+  width: 30%;
+  height: 400px;
+  /*border: 2px solid #000;
+  */border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin: 1rem 0;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+.itemsContainer .item:hover{
+  scale: 1.1;
+}
+.itemsContainer .item img{
+  width: 50%;
+  height: 40%;
+  min-height: 50%;
+  padding-bottom: 1rem;
+}
+.itemText{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.bookName{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.shortDes{
+  font-size: .8rem;
+  margin: .5rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+.authorName{
+  font-size: .8rem;
+  font-weight: 700;
+  margin: .5rem 0;
+}
+.btnContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top:0.5rem ;
+}
+.itemText .btn {
+  padding: .4rem .6rem;
+  font-weight: bold;
+  border: 2px solid #000;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  cursor: pointer;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  text-transform: capitalize;
+}
+.addToCartBtn{
+  background-color:#58a0db;
+}
+.searchContainer button:hover,
+.itemText .btn:hover{
+  background-color: #5a5757;
+  color: #fff;
+}
+
+
+footer{
+  width: 100%;
+  background-color:#2a2828;
+  color: #fff;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h3{
+  font-size: .9rem;
+}
+footer h3 span{
+  color: #58a0db;
+  font-size: .9rem;
+}
+
+
+
+
+
+/*details Page  */
+
+#DetailsSection{
+  width: 100%;
+  min-height: 75vh;
+  margin: 2rem 0;
+}
+#DetailsSection .container{
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+#DetailsSection img {
+  width: 20%;
+  /* max-height: 300px; */
+}
+#DetailsSection .itemText{
+  width: 60%;
+  justify-content: space-around;
+  margin-top: 2rem;
+  text-align:justify;
+  line-height:20px;
+  font-size: .9rem;
+}
+.bookName{
+  font-size: 1.1rem;
+}
+#DetailsSection .bookName {
+  font-size: 2rem;
+} 
+.fullDes{
+  margin-top: 2rem;
+}
+.anotherDetails{
+  margin-top: 2rem;
+}
+.anotherDetails .authorName{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.anotherDetails .publisher {
+  margin: 1rem 0;
+}
+.anotherDetails .publisher span{
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+
+
+
+.hide {
+  display: none;
+}
+
+
+
+@media only screen and (max-width:769px){
+  .itemsContainer .item {
+    width: 40%;
+  }
+  .searchContainer{
+    width: 100%;
+  }
+  nav ul ,
+  .cartContainer{
+    display: none;
+  }
+  .menu-bar{
+    display: block;
+  }
+  #DetailsSection .container{
+    flex-direction: column;
+  }
+  #DetailsSection img {
+    width: 50%;
+  }
+  #DetailsSection .itemText{
+    width: 100%;
+  }
+}
+@media only screen and (max-width:426px){
+  
+  .itemsContainer .item {
+    width: 100%;
+  }
+}
