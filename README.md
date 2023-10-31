@@ -1,5 +1,5 @@
 # BookStore
-A simple Book Store JavaScript with Information Technology Institute (ITI) using :
+A simple Book Store with Information Technology Institute (ITI) using :
 - Google API
 - JavaScript
 - HTML5
