@@ -1,6 +1,6 @@
 # BookStore
 A simple Book Store with Information Technology Institute (ITI) using :
-- Google API
+- Google API : to fetch data
 - JavaScript
 - HTML5
 - CSS3
